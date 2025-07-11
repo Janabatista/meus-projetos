@@ -1,0 +1,31 @@
+# 📊 Comparador de Folhas de Pagamento em PDF
+
+Este script em Python compara dados de funcionários entre **duas folhas de pagamento em PDF**, identificando:
+
+- Diferenças salariais
+- Funcionários que **entraram** ou **saíram** entre uma folha e outra
+- Geração automática de relatório em Excel com os resultados
+
+---
+
+## 📦 Bibliotecas Utilizadas
+
+- `pdfplumber` – Extração de texto de PDFs
+- `pandas` – Manipulação de dados
+- `re` – Expressões regulares para identificar padrões de texto
+
+---
+
+## ▶️ Como Funciona
+
+1. O script extrai informações de dois arquivos PDF:
+   - Matrícula
+   - Nome
+   - Nível salarial
+   - Salário
+
+2. Compara os dados extraídos para:
+   - Identificar mudanças salariais
+   - Apontar quem saiu ou entrou
+
+3. Exibe os resultados no terminal e exporta para o arquivo:
